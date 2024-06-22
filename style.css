@@ -26,11 +26,12 @@
 
 body {
     background-color: var(--primary);
+    overflow-x: hidden;
 }
 
 #navbar {
     background-color: var(--primary);
-    width: 100%;
+    width: 100vw;
     height: 70px;
     position: fixed;
     margin: auto;
@@ -91,7 +92,7 @@ body {
 }
 
 #background {
-    width: 100%;
+    width: 100vw;
     margin-top: 11px;
 }
 
@@ -106,13 +107,17 @@ body {
 
 
 /* footer */
+.follow {
+    display: flex;
+    gap: 3rem
+}
 
 footer {
     overflow: hidden;
     display: grid;
     padding: 2rem;
     color: white;
-    height: 40vh;
+    max-height: 50vh;
     background-color: rgb(37, 37, 37);
     grid-template-areas:
         'lup rup'
@@ -142,6 +147,7 @@ footer {
 .rightt {
     grid-area: rdown;
     gap: 2rem;
+    flex-direction: column;
 }
 
 .fotheadd {
@@ -183,52 +189,58 @@ footer {
 }
 
 #Services {
-    height: 3rem;
+    height: auto;
     width: 2rem;
 }
+
 #AboutUs {
-    height: 3rem;
+    height: auto;
     width: 2rem;
 }
+
 .Services {
     height: auto;
     margin-top: 3rem;
 }
 
+.servicecards div {
+    width: 55rem;
+
+}
+
 .servicecards {
-    height: 70vh;
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
     justify-content: space-around;
-    margin-left: -9rem;
 }
 
 #card {
     overflow: hidden;
-    position: absolute;
 }
 
 .card {
-    position: absolute;
     transition: all 2s ease;
     border: 2px solid white;
     z-index: 1;
     width: 18rem;
+    margin-right: -146px;
 }
-.phno{
+
+.phno {
     font-weight: 700;
     color: white;
-    position: absolute;
-    right: 25rem;
-    margin-top: -11rem;
 }
+
 .subcards {
-    position: absolute;
     transition: all 2s ease;
     border: 2px solid white;
+    margin-left: -146px;
     width: 18rem;
 }
+
 /* 
 .cardiv1{
     left: 10rem;
@@ -271,25 +283,16 @@ article {
     font-weight: bold;
     color: var(--primary);
 }
-.cardiv1:hover .card{
-    transform: translate(-6rem);
+
+.cardiv:hover .card{
+    margin-right: 1rem ;
 }
-.cardiv1:hover .subcards{
-    transform: translate(13rem);
+
+.cardiv:hover .subcards {
+    margin-left: 1rem ;
 }
-.cardiv2:hover .card{
-    transform: translate(-10.5rem);
-}
-.cardiv2:hover .subcards{
-    transform: translate(10.5rem);
-}
-.cardiv3:hover .card{
-    transform: translate(-13rem);
-}
-.cardiv3:hover .subcards{
-    transform: translate(6rem);
-}
-.brandingvid{
+
+.brandingvid {
     width: 59%;
     margin-top: 3rem;
     margin: 0 18rem;
