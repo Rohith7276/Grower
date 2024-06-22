@@ -25,10 +25,12 @@ footer {
 }
 .rightt{
     width: fit-content;
+    margin: auto;
 }
 .navlist{
     overflow: hidden;
-    width: 100%
+    width: 100%;
+    height: inherit;
 }
 .itema{
     padding: 0px;
@@ -61,7 +63,16 @@ article{
 }
 .fotheadd{
     margin: auto;
+    text-align: center;
 }
 .logoss{
     gap: 1rem;
+}
+.heads{
+    font-size: 4rem;
+}
+.follow{
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
 }
