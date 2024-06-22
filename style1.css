@@ -1,546 +1,67 @@
-#background {
-    width: 100%;
-    margin-top: 3.5rem;
+footer {
+    grid-template-areas:
+        'lup'
+        'rup'
+        'rdown';
+ width: auto;  
+ height: 30rem;   
 }
-.Services {
-    height: auto;
-    margin-top: -3rem;
+
+* {
+    overflow-x: hidden;
 }
-.itema a:hover {
-    transition: all ease 100ms;
-    font-size: smaller;
-}
-.itema a {
-    text-decoration: none;
-    color: white;
-    font-size: smaller;
-}
+
 #navbar {
-    background-color: var(--primary);
-    width: 72%;
-    height: 65px;
-    position: fixed;
-    margin: auto;
-    z-index: 10;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-left: 2rem;
-    gap: 14px;
+    padding-left: 0rem;
+    gap: 0px;
+    padding-bottom: 1rem;
 }
-.logo:hover {
-    filter: drop-shadow(#B1A4BB 0rem 0rem 0px);
-width: 70px;
+.logo{
+    margin: 0px;
+    width: 100px;
 }
-.logo {
-    width: 70px;
-    margin: 0px 0px 2px -22px;
-}
-.itema {
-    list-style-type: none;
-    width: 12rem;
-    display: flex;
-    padding: 1rem 0rem;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.servicecards {
-    height: 100vh;
-    width: 100%;
-    display: flex;
+#navbar{
     flex-direction: column;
-    justify-content: space-between;
-    margin-left: 5.3rem;
-    /* margin: auto; */
 }
-.card {
-    width: 14rem;
+.rightt{
+    width: fit-content;
 }
-.subcards {
-    width: 14rem;
+.navlist{
+    overflow: hidden;
+    width: 100%
 }
-article {
-    color: white;
-    padding: 4rem 4rem 2rem 4rem;
-    font-size: 1.5rem;
-    margin-top: 19rem;
+.itema{
+    padding: 0px;
 }
-#Serviceshead {
-    text-align: left;
-    font-family: "Teko", sans-serif;
-    font-size: 5rem;
-    font-weight: lighter;
-    margin-left: 6.8rem;
-    color: white;
+#logodiv{
+    overflow: hidden;
+    width: 5rem;
 }
-#Abtus {
-    background-color: var(--tertiary);
-    padding: 3rem;
-    margin: 0rem 0;
-    font-size: x-large;
-    text-align: justify;
-    width: 71%;
+#background {
+    
+    margin-top: 5rem;
+}.Services {
+    margin-top: 0;
+}
+article{
+    padding: 1rem 2rem 2rem 5rem;
+    margin-top: -2rem;
 }
 .brandingvid {
-    width: 92%;
-    margin-top: -1rem;
-    margin: 0 10px;
-    margin-top: 3.5rem;
+    width: 89%;
 }
-#navbar {
-    background-color: var(--primary);
-    width: 76%;
-    height: 65px;
-    position: fixed;
-    margin: auto;
-    z-index: 10;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-left: 2rem;
-    gap: 0px;
-    margin-left: 0rem;
+.footercont{
+    visibility: hidden;
+    position: absolute;
+    width: 0px;
 }
-.navlist {
-    width: 86%;
-    display: flex;
-    flex-direction: row;
-    /* background-color: black; */
-    align-items: center;
-    justify-content: space-between;
-}
-.heads {
-    text-align: center;
-    font-family: "Teko", sans-serif;
-    font-size: 5rem;
-    font-size: 5rem;
-    font-weight: bold;
-    color: var(--primary);
-}
-footer {
-    overflow: hidden;
-    display: grid;
-    padding: 2rem;
-    color: white;
-    height: 40vh;
-    background-color: rgb(37, 37, 37);
-    grid-template-areas:
-        'lup lup'
-        'rup rup'
-        'rdown rdown'
-        'ldown ldown';
-    cursor: default;
-}
-.footercont div {
-    height: 10rem;
-    border-right: 2px solid white;
-    padding: 2rem;
-    border-left: 2px solid white;
-}
-.footercont {
-    grid-area: ldown;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin-top: 3rem;
-    /* justify-content: end; */
-    width: 40rem;
-}
-
-.servicecards {
-    height: 100vh;
-    width: 110%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-left: 5.3rem;
-    /* margin: auto; */
-}
-.logo {
-    width: 58px;
-    margin: 0px 0px 2px 15px;
-}
-#Serviceshead {
-    text-align: center;
-    font-family: "Teko", sans-serif;
-    font-size: 5rem;
-    font-weight: lighter;
-    margin-left: 0rem;
-    color: white;
-}
-.servicecards {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-left: 7.3rem;
-    /* margin: auto; */
-}* {
-    margin: 0;
-    padding: 0;
-}
-
-:root {
-    --primary: #270e47;
-    --secondary: #d49ffd;
-    --tertiary: #B1A4BB;
-    --bluee: rgb(92, 182, 221);
-}
-
-::-webkit-scrollbar {
-    width: 9px;
-}
-
-::-webkit-scrollbar-track {
-    background-color: #B1A4BB;
-    /* Color of the track */
-}
-
-::-webkit-scrollbar-thumb {
-    border-radius: 0px;
-    background-color: #270E47;
-}
-
-body {
-    background-color: var(--primary);
-}
-
-#navbar {
-    background-color: var(--primary);
-    width: 100%;
-    height: 70px;
-    position: fixed;
-    margin: auto;
-    z-index: 10;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-left: 4rem;
-    gap: 20px;
-}
-
-#logodiv {
-    width: 2rem;
-    height: 4rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.logo {
-    width: 100px;
-    margin: -21px -15px -27px -14px;
-}
-
-.logo:hover {
-    filter: drop-shadow(#B1A4BB 0rem 0rem 1px);
-    width: 110px;
-}
-
-.navlist {
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    /* background-color: black; */
-    align-items: center;
-    justify-content: space-around;
-}
-
-.itema a:hover {
-    transition: all ease 100ms;
-    font-size: larger;
-}
-
-.itema a {
-    text-decoration: none;
-    color: white;
-}
-
-.itema {
-    list-style-type: none;
-    width: 12rem;
-    display: flex;
-    padding: 1rem 1rem;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-#background {
-    width: 100%;
-    margin-top: 11px;
-}
-
-.head {
-    text-align: center;
-    font-family: "Teko", sans-serif;
-    font-size: 5rem;
-    font-weight: lighter;
-    color: white;
-}
-
-/* footer */
-
-footer {
-    overflow: hidden;
-    display: grid;
-    padding: 2rem;
-    color: white;
-    height: 40vh;
-    background-color: rgb(37, 37, 37);
-    grid-template-areas:
-        'lup rup'
-        'lup rup'
-        'ldown rup'
-        'ldown rdown';
-    cursor: default;
-}
-
-.footercont {
-    grid-area: ldown;
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    margin-top: 3rem;
-
-    justify-content: center;
-    width: 40rem;
-}
-
 .fotpar {
-    grid-area: rup;
-    padding: 0 7rem;
-    text-align: center;
+    padding: 0;
+    width: auto;
 }
-
-.rightt {
-    grid-area: rdown;
-    gap: 2rem;
+.fotheadd{
+    margin: auto;
 }
-
-.fotheadd {
-    grid-area: lup;
-}
-
-.logoss {
-    display: flex;
-    gap: 2rem;
-}
-
-#gr {
-    text-decoration: none;
-    color: var(--bluee);
-}
-
-.list {
-    text-decoration: none;
-    color: var(--secondary);
-}
-
-.footercont div:nth-child(1) {
-    border-left: 2px solid rgb(255, 255, 255);
-}
-
-.footercont div {
-    height: 10rem;
-    border-right: 2px solid white;
-    padding: 2rem;
-}
-
-/* services */
-#Serviceshead {
-    text-align: center;
-    font-family: "Teko", sans-serif;
-    font-size: 5rem;
-    font-weight: lighter;
-    color: white;
-}
-
-#Services {
-    height: 3rem;
-    width: 2rem;
-}
-#AboutUs {
-    height: 3rem;
-    width: 2rem;
-}
-.Services {
-    height: auto;
-    margin-top: 3rem;
-}
-
-.servicecards {
-    height: 70vh;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-left: -9rem;
-}
-
-#card {
-    overflow: hidden;
-    position: absolute;
-}
-
-.card {
-    position: absolute;
-    transition: all 2s ease;
-    border: 2px solid white;
-    z-index: 1;
-    width: 18rem;
-}
-.phno{
-    font-weight: 700;
-    color: white;
-    position: absolute;
-    right: 25rem;
-    margin-top: -11rem;
-}
-.subcards {
-    position: absolute;
-    transition: all 2s ease;
-    border: 2px solid white;
-    width: 18rem;
-}
-/* 
-.cardiv1{
-    left: 10rem;
-}
-.cardiv2{
-    left: 50rem;
-}
-.cardiv3{
-    right: 10rem;
-} */
-
-.servicehead {
-    color: var(--secondary);
-    margin-top: 7rem;
-    margin-bottom: 2rem;
-    margin-left: -3rem;
-    font-size: 2.5rem;
-}
-
-article {
-    color: white;
-    padding: 1rem 7rem 2rem 9rem;
-    font-size: 1.5rem;
-}
-
-/* About us */
-#Abtus {
-    background-color: var(--tertiary);
-    padding: 3rem;
-    margin: 8rem 0;
-    font-size: x-large;
-    text-align: justify;
-}
-
-.heads {
-    text-align: center;
-    font-family: "Teko", sans-serif;
-    font-size: 5rem;
-    font-size: 6rem;
-    font-weight: bold;
-    color: var(--primary);
-}
-.cardiv1:hover .card{
-    transform: translate(-6rem);
-}
-.cardiv1:hover .subcards{
-    transform: translate(13rem);
-}
-.cardiv2:hover .card{
-    transform: translate(-10.5rem);
-}
-.cardiv2:hover .subcards{
-    transform: translate(10.5rem);
-}
-.cardiv3:hover .card{
-    transform: translate(-13rem);
-}
-.cardiv3:hover .subcards{
-    transform: translate(6rem);
-}
-.brandingvid{
-    width: 59%;
-    margin-top: 3rem;
-    margin: 0 18rem;
-    margin-top: 3.5rem;
-}
-
-/* Media Queries for responsiveness */
-@media (max-width: 431px) {
-    #navbar {
-        flex-direction: column;
-        height: auto;
-        padding-left: 1rem;
-        gap: 10px;
-    }
-
-    .navlist {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .itema {
-        width: auto;
-        padding: 0.5rem;
-    }
-
-    .logo {
-        width: 80px;
-    }
-
-    .logo:hover {
-        width: 90px;
-    }
-
-    .head, .heads {
-        font-size: 3rem;
-    }
-
-
-    .servicehead {
-        margin-left: 0;
-        font-size: 2rem;
-    }
-
-    article {
-        padding: 1rem;
-        font-size: 1.2rem;
-    }
-
-    footer {
-        grid-template-areas:
-            'lup'
-            'rup'
-            'ldown'
-            'rdown';
-        height: auto;
-        padding: 1rem;
-    }
-
-    .footercont {
-        flex-direction: column;
-        width: 100%;
-        margin-top: 1rem;
-    }
-
-    .fotpar {
-        padding: 0 1rem;
-    }
-
-    .brandingvid {
-        width: 80%;
-        margin: 1rem auto;
-    }
-
-    .phno {
-        right: 1rem;
-        margin-top: 1rem;
-    }
+.logoss{
+    gap: 1rem;
 }

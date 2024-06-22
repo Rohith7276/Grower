@@ -294,7 +294,7 @@ article {
 
 .brandingvid {
     width: 59%;
+    display: flex;
+    margin: auto;
     margin-top: 3rem;
-    margin: 0 18rem;
-    margin-top: 3.5rem;
 }
