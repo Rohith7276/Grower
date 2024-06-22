@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary: #270e47;
+    --secondary: #d49ffd;
+    --tertiary: #B1A4BB;
+    --bluee: rgb(92, 182, 221);
+}
+
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #B1A4BB;
+    /* Color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    background-color: #270E47;
+}
+
+body {
+    background-color: var(--primary);
+}
+
+#navbar {
+    background-color: var(--primary);
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    margin: auto;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 4rem;
+    gap: 20px;
+}
+
+#logodiv {
+    width: 2rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    margin: -21px -15px -27px -14px;
+}
+
+.logo:hover {
+
+    filter: drop-shadow(#B1A4BB 0rem 0rem 1px);
+    width: 110px;
+}
+
+.navlist {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    /* background-color: black; */
+    align-items: center;
+    justify-content: space-around;
+}
+
+.itema a:hover {
+    transition: all ease 100ms;
+    font-size: larger;
+}
+
+.itema a {
+    text-decoration: none;
+    color: white;
+}
+
+.itema {
+    list-style-type: none;
+    width: 12rem;
+    display: flex;
+    padding: 1rem 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#background {
+    width: 100%;
+    margin-top: 11px;
+}
+
+.head {
+    text-align: center;
+    font-family: "Teko", sans-serif;
+    font-size: 5rem;
+    font-weight: lighter;
+    color: white;
+}
+
+
+
+/* footer */
+
+footer {
+    overflow: hidden;
+    display: grid;
+    padding: 2rem;
+    color: white;
+    height: 40vh;
+    background-color: rgb(37, 37, 37);
+    grid-template-areas:
+        'lup rup'
+        'lup rup'
+        'ldown rup'
+        'ldown rdown';
+    cursor: default;
+}
+
+.footercont {
+    grid-area: ldown;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 3rem;
+
+    justify-content: center;
+    width: 40rem;
+}
+
+.fotpar {
+    grid-area: rup;
+    padding: 0 7rem;
+    text-align: center;
+}
+
+.rightt {
+    grid-area: rdown;
+    gap: 2rem;
+}
+
+.fotheadd {
+    grid-area: lup;
+}
+
+.logoss {
+    display: flex;
+    gap: 2rem;
+}
+
+#gr {
+    text-decoration: none;
+    color: var(--bluee);
+}
+
+.list {
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+.footercont div:nth-child(1) {
+    border-left: 2px solid rgb(255, 255, 255);
+}
+
+.footercont div {
+    height: 10rem;
+    border-right: 2px solid white;
+    padding: 2rem;
+}
+
+/* services */
+#Serviceshead {
+    text-align: center;
+    font-family: "Teko", sans-serif;
+    font-size: 5rem;
+    font-weight: lighter;
+    color: white;
+}
+
+#Services {
+    height: 3rem;
+    width: 2rem;
+}
+#AboutUs {
+    height: 3rem;
+    width: 2rem;
+}
+.Services {
+    height: auto;
+    margin-top: 3rem;
+}
+
+.servicecards {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: -9rem;
+}
+
+#card {
+    overflow: hidden;
+    position: absolute;
+}
+
+.card {
+    position: absolute;
+    transition: all 2s ease;
+    border: 2px solid white;
+    z-index: 1;
+    width: 18rem;
+}
+.phno{
+    font-weight: 700;
+    color: white;
+    position: absolute;
+    right: 25rem;
+    margin-top: -11rem;
+}
+.subcards {
+    position: absolute;
+    transition: all 2s ease;
+    border: 2px solid white;
+    width: 18rem;
+}
+/* 
+.cardiv1{
+    left: 10rem;
+}
+.cardiv2{
+    left: 50rem;
+}
+.cardiv3{
+    right: 10rem;
+} */
+
+.servicehead {
+    color: var(--secondary);
+    margin-top: 7rem;
+    margin-bottom: 2rem;
+    margin-left: -3rem;
+    font-size: 2.5rem;
+}
+
+article {
+    color: white;
+    padding: 1rem 7rem 2rem 9rem;
+    font-size: 1.5rem;
+}
+
+/* About us */
+#Abtus {
+    background-color: var(--tertiary);
+    padding: 3rem;
+    margin: 8rem 0;
+    font-size: x-large;
+    text-align: justify;
+}
+
+.heads {
+    text-align: center;
+    font-family: "Teko", sans-serif;
+    font-size: 5rem;
+    font-size: 6rem;
+    font-weight: bold;
+    color: var(--primary);
+}
+.cardiv1:hover .card{
+    transform: translate(-6rem);
+}
+.cardiv1:hover .subcards{
+    transform: translate(13rem);
+}
+.cardiv2:hover .card{
+    transform: translate(-10.5rem);
+}
+.cardiv2:hover .subcards{
+    transform: translate(10.5rem);
+}
+.cardiv3:hover .card{
+    transform: translate(-13rem);
+}
+.cardiv3:hover .subcards{
+    transform: translate(6rem);
+}
+.brandingvid{
+    width: 59%;
+    margin-top: 3rem;
+    margin: 0 18rem;
+    margin-top: 3.5rem;
+}
